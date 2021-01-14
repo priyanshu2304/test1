@@ -73,6 +73,7 @@ ul {
 }
 
 .sidebar {   
+    padding-top: 25px;
       width: 100%;
 }
 
@@ -81,12 +82,20 @@ ul {
     padding: 10px 50px 0 10px;
 }
 
+.sidebar li:hover {
+    color: blue;
+    cursor: pointer;
+
+}
+
 .primarycontent {
-    padding: 0 25px 0 25px;
+    padding: 10px 25px 0 25px;
+    background-color: #87cfeb73;
+    border-radius: 5px;
 }
 
 .mainleftcontent {
-    background-color: #87cfeb46;
+    
     border-radius: 5px;
 }
 
@@ -105,12 +114,16 @@ ul {
     font-size: 30px;
     text-align: center;
     border-radius: 5px;
+    cursor: pointer;
   }
 
+
   .leftcontent > div:hover {
-    transition: 2s;
+    transition: 1s;
     transform: scale(1.5);
   }
+
+ 
 
   .form {
       display: flex;
