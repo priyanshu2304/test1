@@ -5,93 +5,230 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="background">
-        <div class="content">
-            <div class="maincontent">
-                <header>
-                    <div class="heading">
-                        <div class="datamax">
-                            <h1>datamax</h1>
-                        </div>
-                        <div class="client">
-                            <h1>My clients</h1>
-                        </div>
-                    </div>
-                </header>
-                <section>
-                    <div class="mainsection">
-                        <nav>
-                            <div class="sidebar">
-                                <ul>
-                                    <li><i class="fa fa-clipboard"
-                                            aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</li>
-                                    <li><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;My Clients
-                                    </li>
-                                    <li><i class="fa fa-calendar-o"
-                                            aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Client Project</li>
-                                    <li><i class="fa fa-gift" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Invite
-                                        client</li>
-                                    <li><i class="fa fa-inbox" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Message
-                                    </li>
-                                    <li><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</li>
-                                </ul>
-                    </div>
-                    </nav>
-                    <div class="primarycontent">
-                        <div class="form">
-                            <div class="firstsection">
-                                <div class="activeclients">
-                                    <form>
-                                        <label for="client"></label>
-                                        <select id="client" name="cars">
-                                            <option value="Active Client">Active Client</option>
-                                            <option value="In-Active Client">In-Active Client</option>
-                                        </select>
-                                    </form>
-                                </div>
-                                <div class="sortclient">
-                                    <form>
-                                        <label for="sort">Sorted By:</label>
-                                        <select id="sort" name="sort">
-                                            <option value="Active">Active</option>
-                                            <option value="In-Active">In-Active</option>
-                                        </select>
-
-                                    </form>
-                                </div>
-                            </div>
-                            <form>
-                                <div class="initialseachbar"><input type="search" class="searchbar"
-                                        placeholder="search client">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="mainleftcontent">
-                            <div class="leftcontent">
-                                <div>1</div>
-                                <div>2</div>
-                                <div>3</div>
-                                <div>4</div>
-                                <div>5</div>
-                                <div>6</div>
-                                <div>7</div>
-                                <div>8</div>
-                                <div>9</div>
-                                <div>5</div>
-                                <div>6</div>
-                                <div>7</div>
-                                <div>9</div>
-                                <div>7</div>
-                                <div>9</div>
-                            </div>
-                        </div>
-                    </div>
+    <header>
+        <div class="heading">
+            <div class="headingcontent">
+                <div class="datamax">datamax</div>
+                <div class="myclient">My Clients</div>
             </div>
-            </section>
         </div>
-    </div>
-    </div>
+    </header>
+    <section>
+        <div class="section">
+            <nav>
+                <div class="navigation">
+                    <ul>
+                        <li><i class="fa fa-files-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</li>
+                        <li style="color: blue;border-left:3px solid blue;"><i class="fa fa-users"
+                                aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;My Clients</li>
+                        <li><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Client Projects
+                        </li>
+                        <li><i class="fa fa-gift" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Invite Clients</li>
+                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Message</li>
+                        <li><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="topsection">
+                    <div class="activeclient">Active Client<i class="fa fa-sort-desc" aria-hidden="true" id="b"
+                            style="color: blue;"></i></div>
+                    <div class="total">14 Total</div>
+                    <div class="sorted">Sorted by:<span id="dark">Active</span><i class="fa fa-sort-desc" id="a"
+                            aria-hidden="true" style="color: blue;"></i></div>
+                    <div class="searchbox"><i class="fa fa-search" aria-hidden="true"></i><input type="search"
+                            class="search" placeholder="Search Client"></div>
+                </div>
+                <div class="grid-container">
+                    <div class="item1">
+                        <div class="itembox">
+                            <div class="image">
+                                <img src="./Images/264-2640465_passport-size-photo-sample-hd-png-download.png"
+                                    style="width: 100px;height: 100px;">
+                            </div>
+                            <div class="details">
+                                <p>Jesus Gibbs</p>
+                                <p style="color: blue;">xyz@gmail.com</p>
+                            </div>
+                            <div class="smallcircle">
+                                <div class="at" style="background-color: rgba(0, 0, 255, 0.795); color: white;">AT</div>
+                                <div><img class="bt"></div>
+                                <div class="at" style="background-color: palevioletred; color: white;">VB</div>
+                                <div><img class="ct"></div>
+                            </div>
+                            <div class="choose">
+                                <div class="profile"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Profile
+                                </div>
+                                <div class="contact"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i>&nbsp;&nbsp;Contact</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <div class="itembox">
+                            <div class="image">
+                                <img src="./Images/portrait-bearded-man-looking-camera-260nw-1357097612.webp"
+                                    style="width: 100px;height: 100px;">
+                            </div>
+                            <div class="details">
+                                <p>Frank Shelton</p>
+                                <p style="color: blue;">wunsch_alysa@yhoo.com</p>
+                            </div>
+                            <div class="smallcircle">
+                                <div><img class="ct"></div>
+                                <div class="at" style="background-color: palevioletred; color: white;">VB</div>
+                                <div><img class="dt"></div>
+                            </div>
+                            <div class="choose">
+                                <div class="profile"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Profile
+                                </div>
+                                <div class="contact"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i>&nbsp;&nbsp;Contact</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item3">
+                        <div class="itembox">
+                            <div class="image">
+                                <div class="lettersn" style="width: 100px;height: 100px;">N</div>
+                            </div>
+                            <div class="details">
+                                <p>Ronald Thompson</p>
+                                <p style="color: blue;">wendyauer@hotmail.com</p>
+                            </div>
+                            <div class="smallcircle">
+                                <div class="at" style="background-color: rgba(0, 0, 255, 0.795); color: white;">AF</div>
+                                <div class="at" style="background-color: palevioletred; color: white;">RD</div>
+                                <div><img class="ct"></div>
+                            </div>
+                            <div class="choose">
+                                <div class="profile"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Profile
+                                </div>
+                                <div class="contact"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i>&nbsp;&nbsp;Contact</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item4">
+                        <div class="itembox">
+                            <div class="image">
+                                    <div class="lettersm" style="width: 100px;height: 100px;">M</div>
+                            </div>
+                            <div class="details">
+                                <p>Jesus Gibbs</p>
+                                <p style="color: blue;">xyz@gmail.com</p>
+                            </div>
+                            <div class="smallcircle">
+                                <div class="at" style="background-color: rgba(0, 0, 255, 0.795); color: white;">AT</div>
+                                <div class="at" style="background-color: palevioletred; color: white;">VB</div>
+                            </div>
+                            <div class="choose">
+                                <div class="profile"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Profile
+                                </div>
+                                <div class="contact"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i>&nbsp;&nbsp;Contact</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item5">
+                        <div class="itembox">
+                            <div class="image">
+                                <div class="lettersgm" style="width: 100px;height: 100px;"><div class="cen">GM</div></div>
+                            </div>
+                            <div class="details">
+                                <p>Gilbert Mann</p>
+                                <p style="color: blue;">Billie.moriss@manvix.biz</p>
+                            </div>
+                            <div class="smallcircle">
+                                <div class="at" style="background-color: rgba(80, 80, 80, 0.637); color: white;">CM
+                                </div>
+                                <div><img class="ct"></div>
+                            </div>
+                            <div class="choose">
+                                <div class="profile"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Profile
+                                </div>
+                                <div class="contact"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i>&nbsp;&nbsp;Contact</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item6">
+                        <div class="itembox">
+                            <div class="image">
+                                <img src="./Images/ninth.jpeg"
+                                    style="width: 100px;height: 100px;">
+                            </div>
+                            <div class="details">
+                                <p>Kenneth Clark</p>
+                                <p style="color: blue;">sanbos_fasst@yahoo.com</p>
+                            </div>
+                            <div class="smallcircle">
+                                <div><img class="dt"></div>
+                                <div class="at" style="background-color: rgba(80, 80, 80, 0.637); color: white;">KC
+                                </div>
+                            </div>
+                            <div class="choose">
+                                <div class="profile"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Profile
+                                </div>
+                                <div class="contact"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i>&nbsp;&nbsp;Contact</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item7">
+                        <div class="itembox">
+                            <div class="image">
+                                <div class="lettersbh" style="width: 100px;height: 100px;"><div class="cen1">BH</div></div>
+                            </div>
+                            <div class="details">
+                                <p>Blake Hansen</p>
+                                <p style="color: blue;">javonpacocha@hirtho.info</p>
+                            </div>
+                            <div class="smallcircle">
+                                <div class="at" style="background-color: rgba(0, 0, 255, 0.795); color: white;">PL</div>
+                                <div><img class="bt"></div>
+                                <div><img class="dt"></div>
+                            </div>
+                            <div class="choose">
+                                <div class="profile"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Profile
+                                </div>
+                                <div class="contact"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i>&nbsp;&nbsp;Contact</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item8">
+                        <div class="itembox">
+                            <div class="image">
+                                <img src="./Images/fifth.jpg"
+                                    style="width: 100px;height: 100px;">
+                            </div>
+                            <div class="details">
+                                <p>Jesus Gibbs</p>
+                                <p style="color: blue;">xyz@gmail.com</p>
+                            </div>
+                            <div class="smallcircle">
+                                <div class="at" style="background-color: rgba(0, 0, 255, 0.795); color: white;">AT</div>
+                                <div><img class="bt"></div>
+                                <div class="at" style="background-color: palevioletred; color: white;">VB</div>
+                                <div><img class="ct"></div>
+                            </div>
+                        </div>
+                        <div class="choose">
+                            <div class="profile"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Profile
+                            </div>
+                            <div class="contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;Contact
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 </body>
